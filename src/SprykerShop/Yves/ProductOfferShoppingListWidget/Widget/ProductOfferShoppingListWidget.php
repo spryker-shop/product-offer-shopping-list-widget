@@ -20,25 +20,16 @@ class ProductOfferShoppingListWidget extends AbstractWidget
      */
     protected const PARAMETER_PRODUCT = 'product';
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductViewTransfer $productViewTransfer
-     */
     public function __construct(ProductViewTransfer $productViewTransfer)
     {
         $this->addParameter(static::PARAMETER_PRODUCT, $productViewTransfer);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'ProductOfferShoppingListWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '@ProductOfferShoppingListWidget/views/product-offer-shopping-list/product-offer-shopping-list.twig';
